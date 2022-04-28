@@ -46,7 +46,7 @@
          },
      ])
      .then(function(answers){
-         const manager = new Engineer(answers.nameofManager, answers.employeeID, answers.employeeEmail, answers.employeeGithub);
+         const manager = new Manager(answers.nameofManager, answers.employeeID, answers.employeeEmail, answers.employeeGithub);
          team.push(manager);
          
          if (answers.keepBuildingTeam == "Add Engineer") {
