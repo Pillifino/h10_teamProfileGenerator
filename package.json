@@ -1,0 +1,24 @@
+{
+  "name": "h10_teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pillifino/h10_teamProfileGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pillifino/h10_teamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/Pillifino/h10_teamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.3",
+    "jest": "^28.0.2"
+  }
+}
