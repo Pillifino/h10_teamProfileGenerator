@@ -94,11 +94,11 @@
         team.push(engineer);
 
         if (answers.keepBuildingTeam == "Add Engineer") {
-            buildAEngineer();
+            buildEngineer();
         } 
         
         if (answers.keepBuildingTeam == "Add Intern") {
-            buildAIntern();
+            buildIntern();
         } 
     })
  }
@@ -138,17 +138,19 @@
         team.push(intern);
 
         if (answers.keepBuildingTeam == "Add Engineer") {
-            buildAEngineer();
+            buildEngineer();
         } 
         
         if (answers.keepBuildingTeam == "Add Intern") {
-            buildAIntern();
+            buildIntern();
         } 
     })
  }
 
  function renderHTML() {
-     fs.writeFile("./dist/newHTML", teamHTML)
- }
+     const teamContent = team(answers); // Takes answers from team array 
+
+     fs.writeFile("./dist/index.html", teamContent,)
+ };
 
  buildTeam();
