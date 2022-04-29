@@ -4,6 +4,11 @@
  const Intern = require("./lib/intern")
  const Manager = require("./lib/manager")
 
+// Importing employee cards (template literals)
+const engineerCard = require("./src/engineerCard") // Need to get data pushed from inquirer into teams array and use fswritefile to render html page
+const intermCard = require("./src/internCard")
+const managerCard = require("./src/managerCard") 
+
  const inquirer = require("inquirer")
  const fs = require("fs");;
 
@@ -35,8 +40,8 @@
          },
          {
              type: "input",
-             message: "What is your managers github Username?",
-             name: "employeeGithub"
+             message: "What is your managers office number?",
+             name: "officeNumber"
          },
          {
              type: "checkbox",
@@ -46,7 +51,7 @@
          },
      ])
      .then(function(answers){
-         const manager = new Manager(answers.nameofManager, answers.employeeID, answers.employeeEmail, answers.employeeGithub);
+         const manager = new Manager(answers.managerName, answers.employeeID, answers.employeeEmail, answers.officeNumber);
          team.push(manager);
          
          if (answers.keepBuildingTeam == "Add Engineer") {
@@ -128,7 +133,7 @@
         {
             type: "input",
             message: "What is their school name?",
-            name: "employeeData",
+            name: "schoolName",
         },
         {
             type: "checkbox",
@@ -138,7 +143,7 @@
         },
     ])
     .then(function(answers) {
-        const intern = new Intern(answers.nameOfIntern, answers.employeeID, answers.employeeEmail, answers.employeeData);
+        const intern = new Intern(answers.nameOfIntern, answers.employeeID, answers.employeeEmail, answers.schoolName);
         team.push(intern);
 
         if (answers.keepBuildingTeam == "Add Engineer") {
