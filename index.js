@@ -10,7 +10,7 @@
  //Team Array
  const team = [];
 
- // Individual Arrays
+ // Individual Arrays (if you add more than one of the same class)
  const managerArray = [];
  const engineerArray = [];
  const internArray = [];
@@ -55,6 +55,8 @@
 
          if (answers.keepBuildingTeam == "Add Intern") {
              buildIntern();
+         } else {
+             renderHTML(); // see if this renders html when no choices are made
          }
      })
  }
@@ -99,7 +101,9 @@
         
         if (answers.keepBuildingTeam == "Add Intern") {
             buildIntern();
-        } 
+        } else {
+            renderHTML(); // see if this renders html when no choices are made
+        }
     })
  }
 
@@ -143,7 +147,9 @@
         
         if (answers.keepBuildingTeam == "Add Intern") {
             buildIntern();
-        } 
+        } else {
+            renderHTML(); // see if this renders html when no choices are made
+        }
     })
  }
 
