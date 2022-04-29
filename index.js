@@ -15,11 +15,6 @@ const managerCard = require("./src/managerCard")
  //Team Array
  const team = [];
 
- // Individual Arrays (if you add more than one of the same class)
- const managerArray = [];
- const engineerArray = [];
- const internArray = [];
-
  //Function To add a Manager
  function buildTeam() {
      inquirer.prompt([
@@ -57,11 +52,11 @@ const managerCard = require("./src/managerCard")
          if (answers.keepBuildingTeam == "Add Engineer") {
              buildEngineer();
          }
-
-         if (answers.keepBuildingTeam == "Add Intern") {
+         else if (answers.keepBuildingTeam == "Add Intern") {
              buildIntern();
-         } else {
-             renderHTML(); // see if this renders html when no choices are made
+         } 
+         else if(answers.keepBuildingTeam == "Team Complete") {
+            console.log(team)
          }
      })
  }
@@ -103,11 +98,11 @@ const managerCard = require("./src/managerCard")
         if (answers.keepBuildingTeam == "Add Engineer") {
             buildEngineer();
         } 
-        
-        if (answers.keepBuildingTeam == "Add Intern") {
+        else if (answers.keepBuildingTeam == "Add Intern") {
             buildIntern();
-        } else {
-            renderHTML(); // see if this renders html when no choices are made
+        } 
+        else if(answers.keepBuildingTeam == "Team Complete") {
+            console.log(team)
         }
     })
  }
@@ -149,11 +144,11 @@ const managerCard = require("./src/managerCard")
         if (answers.keepBuildingTeam == "Add Engineer") {
             buildEngineer();
         } 
-        
-        if (answers.keepBuildingTeam == "Add Intern") {
+        else if (answers.keepBuildingTeam == "Add Intern") {
             buildIntern();
-        } else {
-            renderHTML(); // see if this renders html when no choices are made
+        } 
+        else if(answers.keepBuildingTeam == "Team Complete") {
+            console.log(team)
         }
     })
  }
