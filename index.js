@@ -157,7 +157,8 @@ const managerCard = require("./src/managerCard")
 
  function renderHTML() {
     let fullHtml = htmlformat();
-    fullHtml = `<!DOCTYPE html>
+    fullHtml = 
+    `<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
