@@ -26,5 +26,9 @@ THEN I exit the application, and the HTML is generated
 ```
 
 # Resources
+## Team Profile Generator Showcase
 https://user-images.githubusercontent.com/98142990/166129984-c6f92dad-c0b2-46bf-b372-23791c157c23.mp4
+
+## Test Showcase
+https://user-images.githubusercontent.com/98142990/166130152-0b8217ae-9414-47bb-b134-b1e010e0edc9.mp4
 
