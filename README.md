@@ -26,3 +26,5 @@ THEN I exit the application, and the HTML is generated
 ```
 
 # Resources
+https://user-images.githubusercontent.com/98142990/166129984-c6f92dad-c0b2-46bf-b372-23791c157c23.mp4
+
